@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+// HOOK
 #hook {
   position: relative;
   border: 0.0625rem solid var(--main-bg-color2);
@@ -62,6 +63,7 @@
   }
 }
 
+// MAIN
 #main {
   position: relative;
   border: 0.0625rem solid var(--main-bg-color2);
@@ -138,13 +140,14 @@
   }
 }
 
+// ABOUT
 #about {
   border: 0.0625rem solid var(--main-bg-color2);
   margin-top: 1%;
   height: 97vh;
   width: 100%;
   overflow: hidden;
-  .about-top {
+  .about_top {
     position: relative;
     height: 50%;
     .swiper {
@@ -185,7 +188,7 @@
       display: none;
     }
   }
-  .about-bottom {
+  .about_bottom {
     position: relative;
     height: 50%;
     .about_img {
@@ -205,28 +208,77 @@
   }
 }
 
+// WORK
 #work {
-  position: relative;
   border: 0.0625rem solid var(--main-bg-color2);
   margin-top: 1%;
   height: 97vh;
   width: 100%;
   overflow: hidden;
-  .work_pagelogo {
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-    font-family: Notable;
-    font-size: 4.375rem;
-    font-weight: 400;
+  .work_top {
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .work_container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      column-gap: 5%;
+      justify-items: center;
+      text-align: center;
+      p {
+        font-weight: 200;
+      }
+      .work_area {
+        display: block;
+        padding-bottom: 20px;
+      }
+      .work_link {
+        text-transform: uppercase;
+        display: inline-block;
+        width: 150px;
+        height: 10px;
+        line-height: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        border: 1px solid var(--main-bg-color2);
+        &:hover {
+          color: white;
+          background: var(--main-bg-color2);
+        }
+      }
+      .work4_lazuli {
+        padding: 30px 0 40px 0;
+        .work_area_lazuli {
+          display: block;
+          padding-bottom: 30px;
+        }
+      }
+    }
   }
-  .work_img {
-    position: absolute;
-    bottom: -1%;
-    left: 0%;
+  .work_bottom {
+    position: relative;
+    height: 30%;
+    .work_img {
+      position: absolute;
+      bottom: -3%;
+      left: 0%;
+    }
+    .work_pagelogo {
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 10%;
+      right: 5%;
+      font-family: Notable;
+      font-size: 4.375rem;
+      font-weight: 400;
+    }
   }
 }
+
+// CONTACT
 #contact {
   position: relative;
   border: 0.0625rem solid var(--main-bg-color2);

@@ -226,31 +226,31 @@
       <!--  ABOUT -->
       <section id="about">
         <h2>section name : page3 about area</h2>
-        <div class="about-top">
+        <div class="about_top">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
                   src="./dist/images/s1_name.png"
-                  alt="어바웃 영역 첫번째 이름이 포함된 사진 이미지 입니다."
+                  alt="어바웃 영역 첫번째 | 이름이 포함된 사진 이미지 입니다."
                 />
               </div>
               <div class="swiper-slide">
                 <img
                   src="./dist/images/s2_techstack.png"
-                  alt="어바웃 영역 두번째 기술스택을 표현한 사진 이미지 입니다."
+                  alt="어바웃 영역 두번째 | 기술스택을 표현한 사진 이미지 입니다."
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="./dist/images/s3_techstack.png"
-                  alt="어바웃 영역 두번째 기술스택을 표현한 사진 이미지 입니다."
+                  src="./dist/images/s3_career.png"
+                  alt="어바웃 영역 세번째 | 경력/경험을 담아낸 사진 이미지 입니다."
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="./dist/images/s4_techstack.png"
-                  alt="어바웃 영역 두번째 기술스택을 표현한 사진 이미지 입니다."
+                  src="./dist/images/s4_edu.png"
+                  alt="어바웃 영역 네번째 | 교육 내용을 표현한 사진 이미지 입니다."
                 />
               </div>
               <div class="swiper-slide">
@@ -263,7 +263,7 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-        <div class="about-bottom">
+        <div class="about_bottom">
           <div class="about_img">
             <img
               src="/dist/images/aboutimage.png"
@@ -277,12 +277,94 @@
       <!--  WORK -->
       <section id="work">
         <h2>section name : page4 work area</h2>
-        <p class="work_pagelogo">work</p>
-        <div class="work_img">
-          <img
-            src="/dist/images/workimage.png"
-            alt="워크 영역 좌측 하단 이미지"
-          />
+        <div class="work_top">
+          <div class="work_container">
+            <!-- NASA -->
+            <div class="work1_nasa">
+              <a
+                class="work_area"
+                href="https://onejean114.cafe24.com/gnuboard5/"
+              >
+                <img
+                  src="./dist/images/w1_nasa.png"
+                  alt="nasa 사이트 리부트 포트폴리오 입니다."
+                />
+              </a>
+              <h3>NASA 홈페이지 리뉴얼</h3>
+              <p>gnuboard / 반응형</p>
+              <a
+                class="work_link"
+                href="https://onejean114.cafe24.com/gnuboard5/"
+                >view</a
+              >
+            </div>
+            <!-- BREAKBOT -->
+            <div class="work2_breakbot">
+              <a
+                class="work_area"
+                href="https://onejean114.cafe24.com/gnuboard5/"
+              >
+                <img
+                  src="./dist/images/w2_breakbot.png"
+                  alt="breakbot 원페이지 소개 포트폴리오 입니다."
+                />
+              </a>
+              <h3>BreakBot 소개 페이지</h3>
+              <p>Bootstrap / 반응형</p>
+              <a
+                class="work_link"
+                href="https://onejean114.cafe24.com/gnuboard5/"
+                >view</a
+              >
+            </div>
+            <!-- REACT -->
+            <div class="work3_react">
+              <a
+                class="work_area"
+                href="https://onejean114.cafe24.com/gnuboard5/"
+              >
+                <img
+                  src="./dist/images/w3_react.png"
+                  alt="react 날씨 api 포트폴리오 입니다."
+                />
+              </a>
+              <h3>날씨 예측 페이지</h3>
+              <p>React / WeatherAPI</p>
+              <a
+                class="work_link"
+                href="https://onejean114.cafe24.com/gnuboard5/"
+                >view</a
+              >
+            </div>
+            <!-- LAZULI -->
+            <div class="work4_lazuli">
+              <a
+                class="work_area_lazuli"
+                href="https://onejean114.cafe24.com/gnuboard5/"
+              >
+                <img
+                  src="./dist/images/w4_lazuli.png"
+                  alt="lazuli 웹사이트 모바일 버전 포트폴리오 입니다."
+                />
+              </a>
+              <h3>Lazuli 모바일 버전 페이지</h3>
+              <p>Team Project</p>
+              <a
+                class="work_link"
+                href="https://onejean114.cafe24.com/gnuboard5/"
+                >view</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="work_bottom">
+          <p class="work_pagelogo">work</p>
+          <div class="work_img">
+            <img
+              src="/dist/images/workimage.png"
+              alt="워크 영역 좌측 하단 이미지"
+            />
+          </div>
         </div>
       </section>
 
@@ -399,7 +481,9 @@
           감사합니다.
         </p>
         <div class="salute_line"></div>
-        <a class="contact_pagelogo" href="#">contact me</a>
+        <a class="contact_pagelogo" href="mailto:onejean114@gmail.com"
+          >contact me</a
+        >
         <div class="contact_img">
           <img
             src="/dist/images/contactimage.png"
@@ -418,10 +502,17 @@
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
         centeredSlides: true,
+        threshold: 100,
         spaceBetween: 30,
+        autoplay: true,
+        // loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        autoplay: {
+          delay: 1000, // 시간 설정
+          disableOnInteraction: false, // false-스와이프 후 자동 재생
         },
       });
     </script>
