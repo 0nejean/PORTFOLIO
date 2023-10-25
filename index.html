@@ -85,9 +85,15 @@
             <header id="header">
               <nav class="nav">
                 <ul class="nav-bar_ul">
-                  <li class="nav-bar_li"><a href="#about">about</a></li>
-                  <li class="nav-bar_li"><a href="#work">work</a></li>
-                  <li class="nav-bar_li"><a href="#contact">contact</a></li>
+                  <li class="nav-bar_li">
+                    <a href="#about">about</a>
+                  </li>
+                  <li class="nav-bar_li">
+                    <a href="#work">work</a>
+                  </li>
+                  <li class="nav-bar_li">
+                    <a href="#contact">contact</a>
+                  </li>
                 </ul>
               </nav>
             </header>
@@ -106,10 +112,12 @@
               내년 한 해는 더 좋은 일 가득하시길 진심으로 기원드립니다.
             </p>
             <div class="hook_img">
-              <img
-                src="/dist/images/hookimage.png"
-                alt="훅 영역 우측 하단 이미지"
-              />
+              <a href="">
+                <img
+                  src="/dist/images/hookimage.png"
+                  alt="훅 영역 우측 하단 이미지"
+                />
+              </a>
             </div>
 
             <footer id="footer_top">
@@ -234,15 +242,17 @@
             </p>
             <p class="main_p_g main_portfolio">portfolio</p>
             <div class="main_img">
-              <img
-                src="/dist/images/mainimage.png"
-                alt="메인 영역 하단 중앙 이미지"
-              />
+              <a href="">
+                <img
+                  src="/dist/images/mainimage.png"
+                  alt="메인 영역 하단 중앙 이미지"
+                />
+              </a>
             </div>
           </section>
         </div>
         <!--  ABOUT -->
-        <div class="section">
+        <div class="section sec3">
           <section id="about">
             <h2>section name : page3 about area</h2>
             <div class="about_top">
@@ -250,31 +260,31 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img
-                      src="./dist/images/s1_name.png"
+                      src="./dist/images/s1_name.jpg"
                       alt="어바웃 영역 첫번째 | 이름이 포함된 사진 이미지 입니다."
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./dist/images/s2_techstack.png"
+                      src="./dist/images/s2_techstack.jpg"
                       alt="어바웃 영역 두번째 | 기술스택을 표현한 사진 이미지 입니다."
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./dist/images/s3_career.png"
+                      src="./dist/images/s3_career.jpg"
                       alt="어바웃 영역 세번째 | 경력/경험을 담아낸 사진 이미지 입니다."
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./dist/images/s4_edu.png"
+                      src="./dist/images/s4_edu.jpg"
                       alt="어바웃 영역 네번째 | 교육 내용을 표현한 사진 이미지 입니다."
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./dist/images/s5_mildstone.png"
+                      src="./dist/images/s5_mildstone.jpg"
                       alt="어바웃 영역 다섯번째 포부를 표현한 사진 이미지 입니다."
                     />
                   </div>
@@ -284,10 +294,12 @@
             </div>
             <div class="about_bottom">
               <div class="about_img">
-                <img
-                  src="/dist/images/aboutimage.png"
-                  alt="어바웃 영역 우측 하단 기준 좌측 방향으로 3/4 지점 이미지"
-                />
+                <a href="">
+                  <img
+                    src="/dist/images/aboutimage.png"
+                    alt="어바웃 영역 우측 하단 기준 좌측 방향으로 3/4 지점 이미지"
+                  />
+                </a>
                 <p class="about_pagelogo">about</p>
               </div>
             </div>
@@ -380,10 +392,12 @@
             <div class="work_bottom">
               <p class="work_pagelogo">work</p>
               <div class="work_img">
-                <img
-                  src="/dist/images/workimage.png"
-                  alt="워크 영역 좌측 하단 이미지"
-                />
+                <a href="">
+                  <img
+                    src="/dist/images/workimage.png"
+                    alt="워크 영역 좌측 하단 이미지"
+                  />
+                </a>
               </div>
             </div>
           </section>
@@ -506,10 +520,12 @@
               >contact me</a
             >
             <div class="contact_img">
-              <img
-                src="/dist/images/contactimage.png"
-                alt="컨택 영역 우측 하단 이미지"
-              />
+              <a href="">
+                <img
+                  src="/dist/images/contactimage.png"
+                  alt="컨택 영역 우측 하단 이미지"
+                />
+              </a>
             </div>
             <footer id="footer_bottom">
               본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 만들어진
@@ -519,24 +535,5 @@
         </div>
       </div>
     </div>
-    <!-- Swiper script -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        threshold: 100,
-        spaceBetween: 30,
-        autoplay: true,
-        // loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 1000, // 시간 설정
-          disableOnInteraction: false, // false-스와이프 후 자동 재생
-        },
-      });
-    </script>
   </body>
 </html>

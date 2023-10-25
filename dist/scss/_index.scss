@@ -67,8 +67,8 @@
 #main {
   position: relative;
   border: 0.0625rem solid var(--main-bg-color2);
-  margin-top: 1%;
-  height: 97vh;
+  margin-top: 0.5%;
+  height: 95vh;
   width: 100%;
   overflow: hidden;
   @keyframes move {
@@ -143,7 +143,7 @@
 // ABOUT
 #about {
   border: 0.0625rem solid var(--main-bg-color2);
-  margin-top: 1%;
+  margin-top: 0.5%;
   height: 97vh;
   width: 100%;
   overflow: hidden;
@@ -168,10 +168,10 @@
           width: 50%;
         }
         &:nth-child(3) {
-          width: 40%;
+          width: 32%;
         }
         &:nth-child(4) {
-          width: 40%;
+          width: 32%;
         }
         &:nth-child(5) {
           width: 25%;
@@ -211,8 +211,8 @@
 // WORK
 #work {
   border: 0.0625rem solid var(--main-bg-color2);
-  margin-top: 1%;
-  height: 97vh;
+  margin-top: 0.5%;
+  height: 95vh;
   width: 100%;
   overflow: hidden;
   .work_top {
@@ -282,8 +282,8 @@
 #contact {
   position: relative;
   border: 0.0625rem solid var(--main-bg-color2);
-  margin-top: 1%;
-  height: 97vh;
+  margin-top: 0.5%;
+  height: 95vh;
   width: 100%;
   overflow: hidden;
   @keyframes move {

@@ -5,6 +5,7 @@
   font-family: "Pretendard";
   background-color: var(--main-bg-color);
   color: var(--main-font-color);
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -15,7 +16,7 @@
 }
 
 .container {
-  padding: 0.5%;
+  padding: 1%;
   h2 {
     position: absolute;
     text-indent: -9999px;
